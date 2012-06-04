@@ -1,4 +1,4 @@
-<h1>Enter New Shopping List</h1>
+%rebase layout title="Shopping List"
 Enter the items bought at the store.  Enter each item bough along with the unit (can, box, or if it's a single item enter "item").  Include the quantity and the price.
 <form action="/shopping" method="post">
   <table>

@@ -1,0 +1,13 @@
+status: 200
+content-length: 209
+via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
+content-location: http://hamiltop.cloudant.com/cs360/50414dcb1ad73060fa9895e41349149d
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+connection: keep-alive
+etag: "1-5e90080cf62a550b7864b230433cf5e9"
+x-couch-request-id: 96baff83
+date: Mon, 04 Jun 2012 17:40:44 GMT
+content-type: application/json
+
+{"_id":"50414dcb1ad73060fa9895e41349149d","_rev":"1-5e90080cf62a550b7864b230433cf5e9","date":1338831596.8276450634,"user_id":"test","ingredients":[{"price":"5","name":"Apples","unit":"item","quantity":"12"}]}

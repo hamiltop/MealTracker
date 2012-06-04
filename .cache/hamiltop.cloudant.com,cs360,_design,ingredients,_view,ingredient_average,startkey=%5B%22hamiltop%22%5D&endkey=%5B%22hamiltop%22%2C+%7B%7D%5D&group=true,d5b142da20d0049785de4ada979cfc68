@@ -1,14 +1,20 @@
 status: 200
+via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
 content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22hamiltop%22%5D&endkey=%5B%22hamiltop%22%2C+%7B%7D%5D&group=true
 cache-control: must-revalidate
 server: CouchDB/1.0.2 (Erlang OTP/R14B)
-etag: a330056c857cb30be59240bf7e76ca1e
-x-couch-request-id: 1b2169a7
-date: Mon, 04 Jun 2012 06:03:22 GMT
+connection: keep-alive
+etag: d2bf4c379d84dae08466b92347316fe6
+x-couch-request-id: 45d1580f
+date: Mon, 04 Jun 2012 17:33:58 GMT
 content-type: application/json
 
 {"rows":[
-{"key":["hamiltop","Apples","item"],"value":[8,36]},
-{"key":["hamiltop","Cheddar Cheese","pound"],"value":[11.589999999999999858,5]},
-{"key":["hamiltop","Milk","gallon"],"value":[2,1]}
+{"key":["hamiltop","Apples","item",1338828195.2718260288],"value":[3,12]},
+{"key":["hamiltop","Apples","item",1338830904.9950098991],"value":[5,36]},
+{"key":["hamiltop","Carrots","item",1338830904.9950098991],"value":[2,20]},
+{"key":["hamiltop","Milk","gallon",1338828195.2718260288],"value":[2,1]},
+{"key":["hamiltop","Milk","gallon",1338830904.9950098991],"value":[5,2]},
+{"key":["hamiltop","Orange","item",1338828195.2718260288],"value":[10,24]},
+{"key":["hamiltop","Oranges","item",1338830904.9950098991],"value":[1,2]}
 ]}

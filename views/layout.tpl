@@ -23,16 +23,19 @@
 % flash_dict = flash()
 %if "error" in flash_dict:
   <div class="alert alert-error">
+    <button class="close" data-dismiss="alert">×</button>
     {{ flash_dict["error"] }}  
   </div>
 %end
 %if "info" in flash_dict:
   <div class="alert alert-info">
+    <button class="close" data-dismiss="alert">×</button>
     {{ flash_dict["info"] }}  
   </div>
 %end
 %if "success" in flash_dict:
   <div class="alert alert-success">
+    <button class="close" data-dismiss="alert">×</button>
     {{ flash_dict["success"] }}  
   </div>
 %end

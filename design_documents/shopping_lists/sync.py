@@ -3,4 +3,4 @@ import os
 
 db = couchquery.Database("http://hiclustescroblingletuall:csb5UthF3EFUXVH6xAChKTb0@hamiltop.cloudant.com/cs360")
 
-db.sync_design_doc("purchases", os.path.join(os.path.dirname(__file__), 'views'))
+db.sync_design_doc("shopping_lists", os.path.join(os.path.dirname(__file__), 'views'))

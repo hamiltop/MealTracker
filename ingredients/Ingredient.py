@@ -14,7 +14,7 @@ class Ingredient:
     return database.db.views.ingredients.ingredient_average(
       startkey=[user_id],
       endkey=[user_id,{}],
-      group=True
+      group_level=3
     ).items()
   @staticmethod
   def all(user_id):
@@ -22,9 +22,16 @@ class Ingredient:
       startkey=[user_id],
       endkey=[user_id,{}],
       reduce=False
-    ).items()
-    return [ {
-      "name":i[0][1], 
-      "unit":i[0][2],
-      "quantity":i[1][1],
-      "price":i[1][0] } for i in ingredients ]
+    )
+    ids = ingredients.ids()
+    items = ingredients.items()
+    array = []
+    for x in xrange(len(items)):
+      array.append({
+        "id":ids[x],
+        "name":items[x][0][1], 
+        "unit":items[x][0][2],
+        "date":time.asctime(time.localtime(items[x][0][3])),
+        "quantity":items[x][1][1],
+        "price":items[x][1][0] })
+    return array

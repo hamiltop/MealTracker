@@ -8,6 +8,7 @@ from shopping import shopping
 from ingredients.Ingredient import *
 from ingredients import ingredients
 from meals import meals
+import time
 
 @route("/static/:path#.+#", name='static')
 def static(path):
@@ -52,10 +53,16 @@ def bottle_flash():
   else:
     return {}
 
+def time_to_string(date):
+  return time.asctime(time.localtime(date))
+
+
 SimpleTemplate.defaults["get_url"] = app.get_url
 SimpleTemplate.defaults["current_user"] = users.current_user
+SimpleTemplate.defaults["logged_in"] = users.logged_in
 SimpleTemplate.defaults["interact"] = code.interact
 SimpleTemplate.defaults["flash"] = bottle_flash
+SimpleTemplate.defaults["time_to_string"] = time_to_string
 
 app = SessionMiddleware(app, session_opts)
 run(app=app,reloader=True)

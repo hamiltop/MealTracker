@@ -1,0 +1,15 @@
+status: 200
+via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
+content-location: http://hamiltop.cloudant.com/cs360/_design/shopping_lists/_view/all/?key=%22hamiltop%22
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+connection: keep-alive
+etag: 50414dcb1ad73060fa9895e4134ff811
+x-couch-request-id: 11a14183
+date: Mon, 04 Jun 2012 17:41:36 GMT
+content-type: application/json
+
+{"total_rows":4,"offset":1,"rows":[
+{"id":"43e6a3a1cbc8b7ae89d82abbc17ad364","key":"hamiltop","value":"43e6a3a1cbc8b7ae89d82abbc17ad364"},
+{"id":"68a0daf47511156d4da6c2bfcd259274","key":"hamiltop","value":"68a0daf47511156d4da6c2bfcd259274"}
+]}

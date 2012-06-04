@@ -1,0 +1,13 @@
+status: 200
+content-length: 215
+via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
+content-location: http://hamiltop.cloudant.com/cs360/5b8cf3b1462b7fb052a24c12a6e9bd30
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+connection: keep-alive
+etag: "1-04a56bc2d2d25cf9005cf67509966974"
+x-couch-request-id: ba3420f0
+date: Mon, 04 Jun 2012 16:31:21 GMT
+content-type: application/json
+
+{"_id":"5b8cf3b1462b7fb052a24c12a6e9bd30","_rev":"1-04a56bc2d2d25cf9005cf67509966974","user_id":"hamiltop","ingredients":[{"price":"10","quantity":"24","name":"Oranges","unit":"item","time":1338824058.3535959721}]}

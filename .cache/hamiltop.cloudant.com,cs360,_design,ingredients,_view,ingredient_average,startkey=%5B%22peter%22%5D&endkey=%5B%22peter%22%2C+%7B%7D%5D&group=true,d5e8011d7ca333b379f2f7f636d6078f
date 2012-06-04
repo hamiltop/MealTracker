@@ -1,10 +1,12 @@
 status: 200
+via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
 content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22peter%22%5D&endkey=%5B%22peter%22%2C+%7B%7D%5D&group=true
 cache-control: must-revalidate
 server: CouchDB/1.0.2 (Erlang OTP/R14B)
-etag: a330056c857cb30be59240bf7e200660
-x-couch-request-id: cf127e82
-date: Mon, 04 Jun 2012 05:52:35 GMT
+connection: keep-alive
+etag: 68a0daf47511156d4da6c2bfcd913eda
+x-couch-request-id: f06c9c33
+date: Mon, 04 Jun 2012 16:52:33 GMT
 content-type: application/json
 
 {"rows":[]}

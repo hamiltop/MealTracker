@@ -1,13 +1,20 @@
 status: 200
+via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
 content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?group=true
 cache-control: must-revalidate
 server: CouchDB/1.0.2 (Erlang OTP/R14B)
-etag: 8b583f8eb0d84b081c6f20f6b3579cba
-x-couch-request-id: 4619e54c
-date: Thu, 31 May 2012 17:11:00 GMT
+connection: keep-alive
+etag: 43e6a3a1cbc8b7ae89d82abbc1d19a9d
+x-couch-request-id: f53f840f
+date: Mon, 04 Jun 2012 17:34:50 GMT
 content-type: application/json
 
 {"rows":[
-{"key":["hamiltop","Apples","item"],"value":[3,12]},
-{"key":["hamiltop","Milk","gallon"],"value":[2,1]}
+{"key":["hamiltop","Apples","item",1338828195.2718260288],"value":[3,12]},
+{"key":["hamiltop","Apples","item",1338830904.9950098991],"value":[5,36]},
+{"key":["hamiltop","Carrots","item",1338830904.9950098991],"value":[2,20]},
+{"key":["hamiltop","Milk","gallon",1338828195.2718260288],"value":[2,1]},
+{"key":["hamiltop","Milk","gallon",1338830904.9950098991],"value":[5,2]},
+{"key":["hamiltop","Orange","item",1338828195.2718260288],"value":[10,24]},
+{"key":["hamiltop","Oranges","item",1338830904.9950098991],"value":[1,2]}
 ]}

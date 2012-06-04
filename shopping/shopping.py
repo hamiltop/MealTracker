@@ -1,16 +1,18 @@
 from bottle import *
+import time
 from Shopping_List import Shopping_List
 from users.users import require_login
 from beaker.middleware import SessionMiddleware
+import code
 
-@route("/shopping/new")
+@route("/shopping/new", apply=require_login)
 @view("shopping_form")
 def new_shopping():
-  require_login()
   return {}
 
-@post("/shopping")
+@post("/shopping", apply=require_login)
 def create_shopping():
+  session = request.environ["beaker.session"]
   ingredients = []
   for i in range(10):
     name = request.forms.get("ingredient[%d][name]" % i)
@@ -19,6 +21,28 @@ def create_shopping():
     price = request.forms.get("ingredient[%d][price]" % i)
     if name != "":
       ingredients.append({"name":name,"unit":unit,"quantity":quantity,"price":price})
-  Shopping_List.new(request.environ["beaker.session"]["user"],ingredients)
+  Shopping_List.new(session["user"],ingredients)
+  if not "flash" in session:
+    session["flash"] = {} 
+  session["flash"]["success"]="Shopping List saved successfully"
   redirect("/") 
 
+@route("/shopping/:id", apply=require_login)
+@view("show_shopping.tpl")
+def show_shopping(id):
+  session = request.environ["beaker.session"]
+  shopping = Shopping_List(id)
+  if shopping.shopping["user_id"] != session["user"]:
+    if not "flash" in session:
+      session["flash"] = {} 
+    session["flash"]["error"]="You do not have permission to access that resource"
+    redirect("/")
+  else:
+    return shopping.shopping 
+
+@get("/shopping", apply=require_login)
+@view("shopping_index.tpl")
+def shopping_index():
+  session = request.environ["beaker.session"]
+  lists = Shopping_List.all(session["user"])
+  return {"lists":lists}

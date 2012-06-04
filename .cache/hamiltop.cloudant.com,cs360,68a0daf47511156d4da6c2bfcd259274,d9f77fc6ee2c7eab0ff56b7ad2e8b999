@@ -1,0 +1,13 @@
+status: 200
+content-length: 330
+via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
+content-location: http://hamiltop.cloudant.com/cs360/68a0daf47511156d4da6c2bfcd259274
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+connection: keep-alive
+etag: "2-b5c5b5ca3a84d0fcdddb18da44a32b22"
+x-couch-request-id: 063b097d
+date: Mon, 04 Jun 2012 17:41:36 GMT
+content-type: application/json
+
+{"_id":"68a0daf47511156d4da6c2bfcd259274","_rev":"2-b5c5b5ca3a84d0fcdddb18da44a32b22","date":1338828195.2718260288,"user_id":"hamiltop","ingredients":[{"price":"3","name":"Apples","unit":"item","quantity":"12"},{"price":"2","name":"Milk","unit":"gallon","quantity":"1"},{"price":10,"name":"Oranges","unit":"item","quantity":24}]}

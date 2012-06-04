@@ -29,18 +29,22 @@ This is your personal database of ingredients along with their average price.  I
   <thead>
     <tr>
       <th>Name</th>
+      <th>Date Bought</th>
       <th>Unit</th>
       <th>Price</th>
       <th>Quantity</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
 %for x in all:
     <tr>
       <td>{{x["name"]}}</td>
+      <td>{{x["date"]}}</td>
       <td>{{x["unit"]}}</td>
       <td>{{ "$%.2f" % x["price"]}}</td>
       <td>{{x["quantity"]}}</td>
+      <td><a href="/shopping/{{x["id"]}}">View Shopping List</a></td>
     </tr>
 %end
   </tbody>

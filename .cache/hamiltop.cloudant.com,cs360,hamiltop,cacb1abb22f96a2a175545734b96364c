@@ -1,11 +1,12 @@
 status: 200
 content-length: 0
+via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
 content-location: http://hamiltop.cloudant.com/cs360/hamiltop
 cache-control: must-revalidate
 server: CouchDB/1.0.2 (Erlang OTP/R14B)
 etag: "1-7ff3c253b6a4924df9d4637b72bacfcf"
 x-couch-request-id: 53e1a8e7
-date: Mon, 04 Jun 2012 06:03:22 GMT
+date: Mon, 04 Jun 2012 21:41:22 GMT
 content-type: application/json
 
 {"_id":"hamiltop","_rev":"1-7ff3c253b6a4924df9d4637b72bacfcf","username":"hamiltop","password":"$2a$12$V5X9M8bAxkQoqbwx2q6fUuzQdQTmlNTTAwsJoKE3F5jOHnJys.cjC"}

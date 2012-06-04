@@ -5,13 +5,27 @@
         <div class="pull-left">
           <ul class="nav">
             <li><a href="/">Home</a></li>
-            <li><a href="/ingredients">My Ingredients</a></li>
+%if logged_in():
+            <li class="dropdown" id="ingredientsMenu">
+              <a class='dropdown-toggle' data-toggle="dropdown" href="#ingredientsMenu">
+                Ingredients
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/ingredients">View My Ingredients</a></li>
+                <li><a href="/shopping">View Shopping Lists</a></li>
+                <li><a href="/shopping/new">Enter New Shopping List</a></li>
+              </ul>
+            </li>
             <li><a href="/meals">My Meals</a></li>
+%end
           <ul>
         </div>
       <div class="pull-right login"> 
 %if user != None:
+      <p>
       Signed in as {{user.user.username}}! <a class="header_link" href="{{ get_url('logout') }}"> Sign out </a>
+      </p>
 %else:
       %include login_form 
 %end

@@ -75,7 +75,7 @@ def logged_in():
   return current_user() != None    
 
 def require_login(target):
-  def _require_login():
+  def _require_login(*args,**kwargs):
     session=request.environ["beaker.session"]
     if not logged_in():
       if not "flash" in session:
@@ -84,5 +84,5 @@ def require_login(target):
       redirect("/")
       return None
     else:
-      return target()
+      return target(*args,**kwargs)
   return _require_login
