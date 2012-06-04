@@ -1,0 +1,11 @@
+status: 200
+content-length: 0
+content-location: http://hamiltop.cloudant.com/cs360/daaaa7f01fecc217eab9c5220571c5d7
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: "1-d8d7862650fba9c25b18b90a39f5346f"
+x-couch-request-id: a540f02d
+date: Mon, 28 May 2012 18:29:51 GMT
+content-type: application/json
+
+{"_id":"daaaa7f01fecc217eab9c5220571c5d7","_rev":"1-d8d7862650fba9c25b18b90a39f5346f","username":"hamiltop","password":"testpw1"}

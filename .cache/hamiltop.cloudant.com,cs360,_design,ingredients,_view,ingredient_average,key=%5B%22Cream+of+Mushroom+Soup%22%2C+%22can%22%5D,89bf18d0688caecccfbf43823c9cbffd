@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?key=%5B%22Cream+of+Mushroom+Soup%22%2C+%22can%22%5D
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: 59af6088ca760de27d3d759d52f2160b
+x-couch-request-id: c5729ddb
+date: Wed, 30 May 2012 21:14:31 GMT
+content-type: application/json
+
+{"rows":[
+{"key":null,"value":{"sample_size":6,"average":0.33333333333333331483}}
+]}

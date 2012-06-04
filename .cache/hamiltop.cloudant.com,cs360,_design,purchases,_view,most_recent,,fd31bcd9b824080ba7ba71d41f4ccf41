@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/purchases/_view/most_recent/
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: 084834e823c0dc86dee31091f90a815f
+x-couch-request-id: c5b5ad2d
+date: Wed, 30 May 2012 22:17:17 GMT
+content-type: application/json
+
+{"rows":[
+{"key":null,"value":81}
+]}

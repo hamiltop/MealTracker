@@ -1,0 +1,11 @@
+status: 200
+content-length: 184
+content-location: http://hamiltop.cloudant.com/cs360/test-player
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: "2-9a4525d1e255fdfe6e19ebec2d43106f"
+x-couch-request-id: 572730fd
+date: Sun, 27 May 2012 04:55:36 GMT
+content-type: application/json
+
+{"_id":"test-player","_rev":"2-9a4525d1e255fdfe6e19ebec2d43106f","location":{"x":5,"y":2},"name":"Peter","Attributes":{"Strength":20,"Health":100},"Army":{"Footmen":200,"Snipers":10}}

@@ -1,0 +1,10 @@
+status: 200
+content-length: 689
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: "26-9fd3a64a3937a5cb7e0650b38dc993e8"
+x-couch-request-id: fd1533fc
+date: Mon, 04 Jun 2012 06:03:21 GMT
+content-type: application/json
+

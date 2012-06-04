@@ -1,0 +1,14 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22hamiltop%22%5D&reduce=false
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: a2d857de355a5f1d744d0191909aa0da
+x-couch-request-id: d9cc2976
+date: Thu, 31 May 2012 17:42:26 GMT
+content-type: application/json
+
+{"total_rows":3,"offset":0,"rows":[
+{"id":"5783143d9425f20d2e299275ba6c7f13","key":["hamiltop","Apples","item"],"value":[5,24]},
+{"id":"7f5979f4522f404a6fa26e1301fe3c21","key":["hamiltop","Apples","item"],"value":[3,12]},
+{"id":"7f5979f4522f404a6fa26e1301fe3c21","key":["hamiltop","Milk","gallon"],"value":[2,1]}
+]}

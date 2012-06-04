@@ -1,0 +1,10 @@
+status: 200
+content-length: 300
+content-location: http://hamiltop.cloudant.com/cs360/_design/purchases/
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: "1-ec593526f11cd82cea529713f9aa3140"
+x-couch-request-id: 5294961b
+date: Wed, 30 May 2012 22:17:13 GMT
+content-type: application/json
+

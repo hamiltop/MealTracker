@@ -1,0 +1,13 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/purchases/_view/most_recent/?limit=2&reduce=false
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: e8b02dff811629c73480390809371bb5
+x-couch-request-id: 5cb57270
+date: Wed, 30 May 2012 22:17:35 GMT
+content-type: application/json
+
+{"total_rows":4,"offset":0,"rows":[
+{"id":"22b7dd2f647009d2161c42bb46d6c5e7","key":["Peter",1338416091.0237810612],"value":10},
+{"id":"5c7c2731a493d8cfafd036a7a93415fc","key":["Peter",1338416093.9606831074],"value":30}
+]}

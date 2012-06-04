@@ -1,0 +1,10 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22peter%22%5D&endkey=%5B%22peter%22%2C+%7B%7D%5D&group=true
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: a330056c857cb30be59240bf7e200660
+x-couch-request-id: cf127e82
+date: Mon, 04 Jun 2012 05:52:35 GMT
+content-type: application/json
+
+{"rows":[]}

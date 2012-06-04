@@ -1,0 +1,11 @@
+status: 200
+content-length: 0
+content-location: http://hamiltop.cloudant.com/cs360/peter
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: "1-50c60042562a3898fd4857705a3162b5"
+x-couch-request-id: d6c6e334
+date: Mon, 04 Jun 2012 05:52:35 GMT
+content-type: application/json
+
+{"_id":"peter","_rev":"1-50c60042562a3898fd4857705a3162b5","username":"peter","password":"$2a$12$j0D0x2iZpHnSVlJs1PDbU.LXNKk4J8jjXIWk9cfdEQcG65ykjK62K"}

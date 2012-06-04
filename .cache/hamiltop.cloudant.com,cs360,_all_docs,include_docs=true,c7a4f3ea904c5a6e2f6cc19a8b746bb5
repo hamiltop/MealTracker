@@ -1,0 +1,15 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_all_docs?include_docs=true
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: "C9ZWMEW4J88RYFNT8G1UAVA5P"
+x-couch-request-id: 1df786c3
+date: Sun, 27 May 2012 06:38:17 GMT
+content-type: application/json
+
+{"total_rows":4,"offset":0,"rows":[
+{"id":"_design\/field","key":"_design\/field","value":{"rev":"7-31d1f218483c54b2466b926ba25c20c7"},"doc":{"_id":"_design\/field","_rev":"7-31d1f218483c54b2466b926ba25c20c7","language":"javascript","views":{"armies":{"map":"function(doc) {\n  if(doc.Army){\n    emit(doc.Army, doc.name);\n  }\n}\n"},"players":{"map":"function(doc) {\n  if(doc.location){ \n    emit(doc.location, doc.Army);\n  }\n}\n"}}}},
+{"id":"test-player","key":"test-player","value":{"rev":"2-9a4525d1e255fdfe6e19ebec2d43106f"},"doc":{"_id":"test-player","_rev":"2-9a4525d1e255fdfe6e19ebec2d43106f","location":{"x":5,"y":2},"name":"Peter","Attributes":{"Strength":20,"Health":100},"Army":{"Footmen":200,"Snipers":10}}},
+{"id":"test-player2","key":"test-player2","value":{"rev":"1-6ffed5738755e132c4e74c251c02b45f"},"doc":{"_id":"test-player2","_rev":"1-6ffed5738755e132c4e74c251c02b45f","location":{"x":9,"y":3},"name":"Ryan","Attributes":{"Strength":20,"Health":100},"Army":{"Footmen":200,"Snipers":10}}},
+{"id":"test-player3","key":"test-player3","value":{"rev":"1-f6e1a2e25395300e17df2a30abe65ddf"},"doc":{"_id":"test-player3","_rev":"1-f6e1a2e25395300e17df2a30abe65ddf","name":"Matt","Attributes":{"Strength":20,"Health":100},"Army":{"Footmen":200,"Snipers":10}}}
+]}

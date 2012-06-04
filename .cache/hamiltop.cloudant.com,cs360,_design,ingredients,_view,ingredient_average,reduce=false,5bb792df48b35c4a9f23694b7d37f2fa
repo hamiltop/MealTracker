@@ -1,0 +1,15 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?reduce=false
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: a330056c857cb30be59240bf7e2ceb17
+x-couch-request-id: 6c3d8d30
+date: Mon, 04 Jun 2012 05:57:05 GMT
+content-type: application/json
+
+{"total_rows":4,"offset":0,"rows":[
+{"id":"5783143d9425f20d2e299275ba6c7f13","key":["hamiltop","Apples","item"],"value":[5,24]},
+{"id":"7f5979f4522f404a6fa26e1301fe3c21","key":["hamiltop","Apples","item"],"value":[3,12]},
+{"id":"ac9b37d87d4804bb174ab93f72bbab8b","key":["hamiltop","Cheddar Cheese","pound"],"value":[11.589999999999999858,5]},
+{"id":"7f5979f4522f404a6fa26e1301fe3c21","key":["hamiltop","Milk","gallon"],"value":[2,1]}
+]}

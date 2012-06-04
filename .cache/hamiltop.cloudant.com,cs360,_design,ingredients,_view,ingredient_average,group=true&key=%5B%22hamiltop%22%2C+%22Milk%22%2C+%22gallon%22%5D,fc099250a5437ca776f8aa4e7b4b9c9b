@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?group=true&key=%5B%22hamiltop%22%2C+%22Milk%22%2C+%22gallon%22%5D
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: 756c18e74b762e37f0faa6c0dbee306a
+x-couch-request-id: 6bc8995f
+date: Thu, 31 May 2012 18:35:53 GMT
+content-type: application/json
+
+{"rows":[
+{"key":["hamiltop","Milk","gallon"],"value":[2,1]}
+]}

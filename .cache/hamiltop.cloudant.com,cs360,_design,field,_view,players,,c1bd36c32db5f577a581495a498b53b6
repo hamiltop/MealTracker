@@ -1,0 +1,13 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/field/_view/players/
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: 8390cc8f681755718ed67fb2c05adfeb
+x-couch-request-id: 5c308f79
+date: Sun, 27 May 2012 20:36:55 GMT
+content-type: application/json
+
+{"total_rows":2,"offset":0,"rows":[
+{"id":"test-player","key":{"x":5,"y":2},"value":{"Footmen":200,"Snipers":10}},
+{"id":"test-player2","key":{"x":9,"y":3},"value":{"Footmen":200,"Snipers":10}}
+]}

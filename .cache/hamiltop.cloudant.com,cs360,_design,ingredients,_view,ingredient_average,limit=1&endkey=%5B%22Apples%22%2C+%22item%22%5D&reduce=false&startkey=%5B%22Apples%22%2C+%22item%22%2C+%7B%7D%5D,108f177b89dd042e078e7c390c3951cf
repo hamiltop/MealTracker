@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?limit=1&endkey=%5B%22Apples%22%2C+%22item%22%5D&reduce=false&startkey=%5B%22Apples%22%2C+%22item%22%2C+%7B%7D%5D
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: 22b7dd2f647009d2161c42bb4625042b
+x-couch-request-id: 178a9f37
+date: Wed, 30 May 2012 22:01:10 GMT
+content-type: application/json
+
+{"total_rows":5,"offset":5,"rows":[
+
+]}

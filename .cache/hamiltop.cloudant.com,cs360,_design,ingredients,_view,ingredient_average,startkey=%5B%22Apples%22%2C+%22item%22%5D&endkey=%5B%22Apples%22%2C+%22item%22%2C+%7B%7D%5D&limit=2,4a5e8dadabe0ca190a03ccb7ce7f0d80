@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22Apples%22%2C+%22item%22%5D&endkey=%5B%22Apples%22%2C+%22item%22%2C+%7B%7D%5D&limit=2
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: 00f3334c2b37d1b242cfecbd925f76d8
+x-couch-request-id: cc707489
+date: Thu, 31 May 2012 16:43:17 GMT
+content-type: application/json
+
+
+{"code":500,"error":"compilation_error","reason":"Expression does not eval to a function. ((new String(\"\\\"_stats\\\"\\n\")))"}
+

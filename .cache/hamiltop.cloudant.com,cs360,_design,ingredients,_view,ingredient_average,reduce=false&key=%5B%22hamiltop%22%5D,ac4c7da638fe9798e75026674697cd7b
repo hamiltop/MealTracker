@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?reduce=false&key=%5B%22hamiltop%22%5D
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: b3d3dae7504ef02b79b4021105c485df
+x-couch-request-id: 54af290e
+date: Thu, 31 May 2012 17:42:09 GMT
+content-type: application/json
+
+{"total_rows":3,"offset":3,"rows":[
+
+]}
