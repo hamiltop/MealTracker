@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22hamiltop%22%2C+%22Chili+Sauce%22%2C+%22fluid+ounce%22%5D&endkey=%5B%22hamiltop%22%2C+%22Chili+Sauce%22%2C+%22fluid+ounce%22%2C+%7B%7D%5D&group=true
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: eb291cf7b325349d52fc974d2942073a
+x-couch-request-id: d0d38a21
+date: Tue, 05 Jun 2012 05:30:01 GMT
+content-type: application/json
+
+{"rows":[
+{"key":["hamiltop","Chili Sauce","fluid ounce",1338874122.1644771099],"value":[2.6899999999999999467,12]}
+]}

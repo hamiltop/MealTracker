@@ -4,6 +4,7 @@
     <tr>
       <th> Date </th>
       <th> Items Bought </th>
+      <th> Cost </th>
       <th> </th>
     </tr>
   </thead>
@@ -15,6 +16,7 @@
       <td>
         {{ ", ".join([ i["name"] for i in x["ingredients"] ]) }}
       </td>
+      <td>{{ "$%.2f" % list.cost }}</td>
       <td><a href="/shopping/{{x["_id"]}}">Details</a></td>
     </tr>
 %end

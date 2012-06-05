@@ -1,0 +1,13 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22hamiltop%22%2C+%22Oranges%22%2C+%22item%22%5D&endkey=%5B%22hamiltop%22%2C+%22Oranges%22%2C+%22item%22%2C+%7B%7D%5D&group=true
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: a59bd66f0021ad848971137530491558
+x-couch-request-id: ac3e0d90
+date: Tue, 05 Jun 2012 05:25:34 GMT
+content-type: application/json
+
+{"rows":[
+{"key":["hamiltop","Oranges","item",1338828195.2718260288],"value":[10,24]},
+{"key":["hamiltop","Oranges","item",1338830904.9950098991],"value":[1,2]}
+]}

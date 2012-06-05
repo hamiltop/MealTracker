@@ -4,6 +4,8 @@
 <dl class="dl-horizontal">
   <dt>Date:</dt>
   <dd>{{time_to_string(date)}}</dd>
+  <dt>Cost:</dt>
+  <dd>{{"$%.2f" % cost }}</dd>
 </dl>
 
 <h2>Ingredients</h2>
@@ -22,7 +24,7 @@
     <tr>
       <td>{{ i["name"] }}</td>
       <td>{{ i["unit"] }}</td>
-      <td>{{ i["price"] }}</td>
+      <td>{{ "$%.2f" % float(i["price"]) }}</td>
       <td>{{ i["quantity"] }}</td>
     </tr>
 %end

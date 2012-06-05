@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22hamiltop%22%2C+%22Bananas%22%2C+%22item%22%5D&endkey=%5B%22hamiltop%22%2C+%22Bananas%22%2C+%22item%22%2C+%7B%7D%5D&group=true
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: a59bd66f0021ad84897113753057046e
+x-couch-request-id: 1ca53cb2
+date: Tue, 05 Jun 2012 05:29:55 GMT
+content-type: application/json
+
+{"rows":[
+{"key":["hamiltop","Bananas","item",1338874009.1175880432],"value":[2,5]}
+]}

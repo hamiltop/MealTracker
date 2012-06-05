@@ -4,8 +4,10 @@ from users.users import *
 class Ingredient:
   def __init__(self, name, unit):
     user_id = current_user_id()
+    print name, unit
     ingredient = database.db.views.ingredients.ingredient_average(
-      key=[user_id, name, unit],
+      startkey=[user_id, name, unit],
+      endkey=[user_id, name, unit, {}],
       group=True
     ).values()[0]
     self.price = float(ingredient[0])/ingredient[1]

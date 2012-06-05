@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22hamiltop%22%2C+%22Whipping+Cream%22%2C+%22carton%22%5D&endkey=%5B%22hamiltop%22%2C+%22Whipping+Cream%22%2C+%22carton%22%2C+%7B%7D%5D&group=true
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: f8f7bc0f3f655b1310b29bd19a1ef49d
+x-couch-request-id: 92e92784
+date: Tue, 05 Jun 2012 05:30:00 GMT
+content-type: application/json
+
+{"rows":[
+{"key":["hamiltop","Whipping Cream","carton",1338874122.1644771099],"value":[0.68999999999999994671,1]}
+]}

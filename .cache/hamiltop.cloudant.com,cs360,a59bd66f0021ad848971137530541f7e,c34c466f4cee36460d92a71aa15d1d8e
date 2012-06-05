@@ -1,0 +1,11 @@
+status: 200
+content-length: 0
+content-location: http://hamiltop.cloudant.com/cs360/a59bd66f0021ad848971137530541f7e
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: "1-39a2283bf233ceec6568640e23abf3b6"
+x-couch-request-id: 95a10022
+date: Tue, 05 Jun 2012 05:40:36 GMT
+content-type: application/json
+
+{"_id":"a59bd66f0021ad848971137530541f7e","_rev":"1-39a2283bf233ceec6568640e23abf3b6","date":1338874122.1644771099,"user_id":"hamiltop","ingredients":[{"price":".69","name":"Whipping Cream","unit":"carton","quantity":"1"},{"price":".99","name":"Roasted Peanuts","unit":"pound","quantity":"1"},{"price":"8.89","name":"Bacon","unit":"pound","quantity":"3"},{"price":"2.69","name":"Chili Sauce","unit":"fluid ounce","quantity":"12"}]}

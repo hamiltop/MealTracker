@@ -4,6 +4,7 @@ import time
 class Shopping_List:
   def __init__(self,id):
     self.shopping = database.db.get(id)
+    self.cost = sum([ float(x["price"]) for x in self.shopping["ingredients"] ])
   @staticmethod
   def new(user_id,ingredients):
     database.db.create({"user_id":user_id, "ingredients":ingredients, "date":time.time()})

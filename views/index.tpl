@@ -33,11 +33,4 @@
       </p>
     </div>
   </div>
-
 </div>
-
-<br/>
-<p>
-<a href="/shopping/new">Enter New Shopping Lists</a></br>
-<a href="/ingredients">View Ingredient Summary</a></br>
-</p>

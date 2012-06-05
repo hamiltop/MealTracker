@@ -31,6 +31,20 @@ def test():
   print i.price
   return str(i.price)
 
+@route("/about")
+@view("about")
+def about():
+  return {}
+
+@route("/contact")
+@view("contact")
+def contact():
+  return {}
+
+@route("/tos")
+@view("tos")
+def tos():
+  return {}
 
 session_opts = {
     "session.type": "file",

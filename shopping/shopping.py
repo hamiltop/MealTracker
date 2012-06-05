@@ -38,6 +38,7 @@ def show_shopping(id):
     session["flash"]["error"]="You do not have permission to access that resource"
     redirect("/")
   else:
+    shopping.shopping["cost"] = shopping.cost
     return shopping.shopping 
 
 @get("/shopping", apply=require_login)

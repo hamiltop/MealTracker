@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22hamiltop%22%2C+%22Roasted+Peanuts%22%2C+%22pound%22%5D&endkey=%5B%22hamiltop%22%2C+%22Roasted+Peanuts%22%2C+%22pound%22%2C+%7B%7D%5D&group=true
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: a59bd66f0021ad8489711375305763bf
+x-couch-request-id: 1f94424e
+date: Tue, 05 Jun 2012 05:30:01 GMT
+content-type: application/json
+
+{"rows":[
+{"key":["hamiltop","Roasted Peanuts","pound",1338874122.1644771099],"value":[0.98999999999999999112,1]}
+]}
