@@ -1,3 +1,7 @@
 Beaker==1.6.3
+bottle==0.10.9
 couchquery==0.9
+distribute==0.6.24
+httplib2==0.7.4
 py-bcrypt==0.2
+wsgiref==0.1.2

@@ -79,4 +79,5 @@ SimpleTemplate.defaults["flash"] = bottle_flash
 SimpleTemplate.defaults["time_to_string"] = time_to_string
 
 app = SessionMiddleware(app, session_opts)
-run(app=app,reloader=True)
+run(app=app,reloader=True,port=int(os.environ.get("PORT", 5000)),host="0.0.0.0")
+

@@ -1,1 +1,1 @@
-web: game.py
+web: python game.py
