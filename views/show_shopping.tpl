@@ -30,3 +30,6 @@
 %end
   </tbody>
 </table>
+
+<a href="/shopping/{{_id}}/edit">Edit</a>
+<a href="/shopping/{{_id}}/delete">Delete</a>

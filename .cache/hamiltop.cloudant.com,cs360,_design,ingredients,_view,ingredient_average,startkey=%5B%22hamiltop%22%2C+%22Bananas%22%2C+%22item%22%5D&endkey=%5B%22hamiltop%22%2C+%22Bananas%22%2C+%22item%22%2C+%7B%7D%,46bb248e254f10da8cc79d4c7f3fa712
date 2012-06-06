@@ -1,10 +1,12 @@
 status: 200
+via: 1.1 fltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
 content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/?startkey=%5B%22hamiltop%22%2C+%22Bananas%22%2C+%22item%22%5D&endkey=%5B%22hamiltop%22%2C+%22Bananas%22%2C+%22item%22%2C+%7B%7D%5D&group=true
 cache-control: must-revalidate
 server: CouchDB/1.0.2 (Erlang OTP/R14B)
-etag: a59bd66f0021ad84897113753057046e
-x-couch-request-id: 1ca53cb2
-date: Tue, 05 Jun 2012 05:29:55 GMT
+connection: keep-alive
+etag: c4a4ca36f2b9cbb6840cae2978277b9e
+x-couch-request-id: cdf81cb9
+date: Tue, 05 Jun 2012 23:04:01 GMT
 content-type: application/json
 
 {"rows":[

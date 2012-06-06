@@ -12,3 +12,7 @@ class Shopping_List:
   def all(user_id):
     ids = database.db.views.shopping_lists.all(key=user_id).ids()
     return [ Shopping_List(id) for id in ids ]
+  def save(self):
+    database.db.update(self.shopping)
+  def delete(self):
+    database.db.delete(self.shopping)
