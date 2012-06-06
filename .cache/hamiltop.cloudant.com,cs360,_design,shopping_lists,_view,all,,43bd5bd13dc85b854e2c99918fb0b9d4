@@ -1,12 +1,10 @@
 status: 200
 content-length: 0
-via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
 content-location: http://hamiltop.cloudant.com/cs360/_design/shopping_lists/_view/all/
 cache-control: must-revalidate
 server: CouchDB/1.0.2 (Erlang OTP/R14B)
-connection: keep-alive
-etag: 40c4e594f074ca2b6b233f3ebfd7a1b3
-x-couch-request-id: db0943a9
-date: Wed, 06 Jun 2012 17:38:58 GMT
+etag: 546cd7a107fe6d9cb4f39801f388b26b
+x-couch-request-id: faf17513
+date: Wed, 06 Jun 2012 20:29:46 GMT
 content-type: application/json
 

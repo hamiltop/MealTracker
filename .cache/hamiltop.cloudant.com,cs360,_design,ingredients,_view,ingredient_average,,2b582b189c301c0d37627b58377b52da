@@ -1,12 +1,10 @@
 status: 200
 content-length: 0
-via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
 content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/ingredient_average/
 cache-control: must-revalidate
 server: CouchDB/1.0.2 (Erlang OTP/R14B)
-connection: keep-alive
-etag: 7d7b12a9c580212ff8d7de71f285ea2a
-x-couch-request-id: 80cd8ae4
-date: Wed, 06 Jun 2012 17:39:23 GMT
+etag: 546cd7a107fe6d9cb4f39801f37f4e1c
+x-couch-request-id: 6ae7a14d
+date: Wed, 06 Jun 2012 20:28:28 GMT
 content-type: application/json
 

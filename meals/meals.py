@@ -3,8 +3,10 @@ import database
 import code
 from ingredients.Ingredient import *
 from users.users import *
+import time
+from Meal import Meal
 
-@get("/meals/new")
+@get("/meals/new", apply=require_login)
 @view("new_meal_form")
 def new_meal():
   ingredients = Ingredient.averages(current_user_id())
@@ -12,11 +14,12 @@ def new_meal():
   units = list(set([ x[0][2] for x in ingredients ]))
   return {"names":names, "units":units}
 
-@post("/meals/cost")
-@view("meal_cost")
-def meal_cost():
+@post("/meals", apply=require_login)
+def create_meal():
+  session = request.environ["beaker.session"]
   ingredients = []
   cost = 0
+  name = request.forms.get("name")
   for i in range(10):
     name = request.forms.get("ingredient[%d][name]" % i)
     unit = request.forms.get("ingredient[%d][unit]" % i)
@@ -31,4 +34,45 @@ def meal_cost():
         "price":ingredient.price,
         "cost":ingredient.price * float(quantity)
       })
-  return {"ingredients":ingredients, "cost":cost}
+  if not "flash" in session:
+    session["flash"] = {} 
+  session["flash"]["success"]="Meal created successfully"
+  meal = Meal.new(session["user"],ingredients,name)
+  redirect("/meals/"+meal.meal["_id"])
+
+@route("/meals/:id")
+@view("meal_cost")
+def meal_cost(id):
+  session = request.environ["beaker.session"]
+  meal = Meal(id)
+  if meal.meal["user_id"] != session["user"]:
+    if not "flash" in session:
+      session["flash"] = {} 
+    session["flash"]["error"]="You do not have permission to access that resource"
+    redirect("/")
+  else:
+    return {"ingredients":meal.meal.meal, "cost":meal.cost, "id":meal.meal._id}
+
+@get("/meals")
+@view("meal_index")
+def meal_index():
+  session = request.environ["beaker.session"]
+  meals = Meal.all(session["user"])
+  return {"meals":meals}
+
+@route("/meals/:id/delete", apply=require_login)
+def meals_delete(id):
+  session = request.environ["beaker.session"]
+  meal = Meal(id)
+  if meal.meal["user_id"] != session["user"]:
+    if not "flash" in session:
+      session["flash"] = {} 
+    session["flash"]["error"]="You do not have permission to access that resource"
+    redirect("/")
+  else:
+    if not "flash" in session:
+      session["flash"] = {} 
+    session["flash"]["success"]="Meal deleted successfully"
+    meal.delete()
+    redirect("/meals")
+  

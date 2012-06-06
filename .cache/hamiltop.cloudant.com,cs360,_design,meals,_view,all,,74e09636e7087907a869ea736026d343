@@ -1,0 +1,10 @@
+status: 200
+content-length: 0
+content-location: http://hamiltop.cloudant.com/cs360/_design/meals/_view/all/
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: a233419e38466ddc244be98fac4f645a
+x-couch-request-id: d37b16dd
+date: Wed, 06 Jun 2012 20:28:32 GMT
+content-type: application/json
+

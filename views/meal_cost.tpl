@@ -26,3 +26,4 @@
   </tbody>
 </table>
 
+<a class="btn" href="/meals/{{id}}/delete">Delete</a>

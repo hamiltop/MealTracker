@@ -1,0 +1,10 @@
+status: 200
+content-length: 223
+content-location: http://hamiltop.cloudant.com/cs360/_design/shopping_lists/
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: "3-7745063e0d4946437f24b0e07138a0cd"
+x-couch-request-id: 73f8aa77
+date: Wed, 06 Jun 2012 20:29:46 GMT
+content-type: application/json
+

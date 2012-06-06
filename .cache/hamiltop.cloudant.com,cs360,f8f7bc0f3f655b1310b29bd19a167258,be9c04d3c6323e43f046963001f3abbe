@@ -2,11 +2,11 @@ status: 200
 content-length: 0
 via: 1.1 hfltr2.byu.edu:80 (IronPort-WSA/7.1.3-014)
 content-location: http://hamiltop.cloudant.com/cs360/f8f7bc0f3f655b1310b29bd19a167258
-x-couch-request-id: b78583b7
+cache-control: must-revalidate
 server: CouchDB/1.0.2 (Erlang OTP/R14B)
 etag: "1-6f5adece106384c49a29c98507b0683b"
-cache-control: must-revalidate
-date: Wed, 06 Jun 2012 17:38:59 GMT
+x-couch-request-id: b78583b7
+date: Wed, 06 Jun 2012 20:29:46 GMT
 content-type: application/json
 
 {"_id":"f8f7bc0f3f655b1310b29bd19a167258","_rev":"1-6f5adece106384c49a29c98507b0683b","date":1338874009.1175880432,"user_id":"hamiltop","ingredients":[{"price":"2.69","name":"Chicken Breasts","unit":"pound","quantity":"5"},{"price":"2","name":"Bananas","unit":"item","quantity":"5"}]}

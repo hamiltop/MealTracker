@@ -23,6 +23,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a href="/meals/new">Plan a Meal</a></li>
+                <li><a href="/meals">View Previous Meals</a></li>
               </ul>
             </li>
 %end

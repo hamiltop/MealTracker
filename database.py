@@ -7,6 +7,10 @@ try:
 except AttributeError:
   pass
 try:
+  db.views.meals
+except AttributeError:
+  pass
+try:
   db.views.ingredients
 except AttributeError:
   pass

@@ -2,7 +2,7 @@
 
 <h2>Ingredients</h2>
 <p>A meal must use ingredients and corresponding units already entered in one or more shopping lists.  If the ingredients you are using are not available in the dropdown, you can either enter them in a new shopping list or leave them out of the calculation.</p>
-<form class="" action="/meals/cost" method="post">
+<form class="" action="/meals" method="post">
   <table class="table">
     <tr>
       <th>Name</th>

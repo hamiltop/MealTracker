@@ -4,9 +4,9 @@ content-location: http://hamiltop.cloudant.com/cs360/_design/ingredients/_view/i
 cache-control: must-revalidate
 server: CouchDB/1.0.2 (Erlang OTP/R14B)
 connection: keep-alive
-etag: c4a4ca36f2b9cbb6840cae2978277b9e
-x-couch-request-id: cdf81cb9
-date: Tue, 05 Jun 2012 23:04:01 GMT
+etag: 2cda6a15298238f05b227ab77cd4e467
+x-couch-request-id: 705fccc0
+date: Wed, 06 Jun 2012 19:06:55 GMT
 content-type: application/json
 
 {"rows":[

@@ -1,0 +1,12 @@
+status: 200
+content-location: http://hamiltop.cloudant.com/cs360/_design/meals/_view/all/?key=%22hamiltop%22
+cache-control: must-revalidate
+server: CouchDB/1.0.2 (Erlang OTP/R14B)
+etag: 546cd7a107fe6d9cb4f39801f3899777
+x-couch-request-id: b6b5300e
+date: Wed, 06 Jun 2012 20:29:54 GMT
+content-type: application/json
+
+{"total_rows":1,"offset":0,"rows":[
+{"id":"633c83b8d85a364cdd3f809761bcc6ef","key":"hamiltop","value":{"_id":"633c83b8d85a364cdd3f809761bcc6ef","_rev":"1-ba4f5852432946526f080e2ae48c2406","date":1339009615.7354619503,"user_id":"hamiltop","meal":[{"price":0.25,"cost":0.5,"name":"Apples","unit":"item","quantity":"2"},{"price":0.4000000000000000222,"cost":1.2000000000000001776,"name":"Bananas","unit":"item","quantity":"3"}],"name":"Apples"}}
+]}
