@@ -55,7 +55,7 @@ session_opts = {
 
   
 
-pp = default_app()
+app = default_app()
 def bottle_flash():
   import bottle
   session=bottle.request.environ["beaker.session"]
